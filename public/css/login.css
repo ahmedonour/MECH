@@ -39,11 +39,12 @@
     --bs-inputs: 0px 3px 5px 0px rgba(0, 0, 0, 0.375);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* Page Loader */
 .loader {
     height: 100vh;
@@ -54,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
-    z-index: 4;
+    z-index: 2;
 }
 
 .loader img {
@@ -86,11 +87,12 @@
 
 /* END Page Loader */
 /* Content section */
-a{
+a {
     text-decoration: none;
     color: var(--clr-primary);
 }
-.contents{
+
+.contents {
     width: 100vw;
     height: auto;
     padding: 1rem;
@@ -100,7 +102,8 @@ a{
     flex-direction: column;
     z-index: 1;
 }
-.contents .upper-content{
+
+.contents .upper-content {
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -109,16 +112,19 @@ a{
     padding: 2rem;
     border-bottom: 1px solid var(--clr-primary);
 }
-.contents .upper-content h1{
+
+.contents .upper-content h1 {
     font-family: var(--ff-Faster-one);
     font-size: var(--fs-5xl);
     padding-bottom: var(--fs-base);
 }
+
 .contents .upper-content a {
     width: 100%;
     height: 50px;
-    
+
 }
+
 .contents .upper-content button {
     width: 100%;
     height: 50px;
@@ -131,13 +137,16 @@ a{
     cursor: pointer;
     box-shadow: var(--bs-inputs);
 }
-.fa-google{
+
+.fa-google {
     padding-left: 1rem;
 }
-.contents .lower-content{
+
+.contents .lower-content {
     width: 80vw;
 }
-.contents .lower-content form{
+
+.contents .lower-content form {
     width: 100%;
     height: auto;
     padding-top: 1rem;
@@ -146,7 +155,8 @@ a{
     justify-content: center;
     align-items: center;
 }
-.contents .lower-content form input{
+
+.contents .lower-content form input {
     width: 80%;
     height: 50px;
     border: none;
@@ -161,24 +171,29 @@ a{
     margin: 1rem;
     outline: none;
 }
-.contents .lower-content form input::placeholder{
+
+.contents .lower-content form input::placeholder {
     font-family: var(--ff-Exo-2);
     font-weight: var(--fw-300);
     font-size: var(--fs-base);
 }
-.contents .lower-content form #submit{
+
+.contents .lower-content form #submit {
     color: var(--clr-Green);
     font-size: var(--fs-2xl);
     font-family: var(--ff-Lateef);
 }
-.contents .lower-content form #submit:hover{
+
+.contents .lower-content form #submit:hover {
     background: var(--clr-Green);
     color: var(--clr-white);
 }
+
 .contents .lower-content form #submit:active {
     background: var(--clr-Green);
     color: var(--clr-white);
 }
+
 .contents .lower-content form #submit:focus {
     background: var(--clr-Green);
     color: var(--clr-white);

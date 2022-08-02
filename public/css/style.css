@@ -98,6 +98,7 @@ body{
     align-items: center;
     background: url(../img/spalshImage.jpg) no-repeat center center fixed;
     padding-block: 3rem;
+    z-index: 1;
 }
 .contents img{
     width: 30%;

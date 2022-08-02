@@ -1,0 +1,35 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title MECH | Sign Up
+        link(rel="stylesheet", href="./css/signup.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        script(src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        .loader 
+            div 
+            img(src="./img/logo-white.png", alt="logo")
+        .contents
+            .upper-content
+                h1 MECH
+                h2 تسجيل الدخول
+                
+                a(href="/login")
+                    button تسجيل الدخول بأستخدام قوقل
+                        i.fab.fa-google 
+            .lower-content
+                form(action="/register", method="post")
+                    input(type="text", name="username", placeholder="Username")
+                    input(type="password", name="password", placeholder="Password")
+                    input(type="submit", value="تسجيل الدخول", id="submit")
+                    a(href="/login") ليس لدي حساب بالفعل 
+
+
+
+        script(defer).
+            $(window).on('load',function(){
+                $('.loader').fadeOut(1000);
+                $('.contents').fadeln(1000);
+                });
