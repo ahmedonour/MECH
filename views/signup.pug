@@ -5,6 +5,7 @@ html(lang='en')
         title MECH | Sign Up
         link(rel="stylesheet", href="./css/signup.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        script(src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous")
         meta(name="viewport" content="width=device-width, initial-scale=1")
     body
         .loader 
@@ -14,16 +15,18 @@ html(lang='en')
             .upper-content
                 h1 MECH
                 h2 تسجيل حساب جديد
-                button تسجيل الدخول بأستخدام قوقل
-                    a(href="/login")
+                
+                a(href="/login")
+                    button تسجيل الدخول بأستخدام قوقل
+                        i.fab.fa-google 
             .lower-content
                 form(action="/register", method="post")
                     input(type="text", name="username", placeholder="Username")
                     input(type="password", name="password", placeholder="Password")
                     input(type="password", name="password2", placeholder="Confirm Password")
                     input(type="email", name="email", placeholder="Email")
-                    input(type="submit", value="Sign Up")
-                    a(href="/login") Already have an account?
+                    input(type="submit", value="تسجيل", id="submit")
+                    a(href="/login") لدي حساب بالفعل 
 
 
 

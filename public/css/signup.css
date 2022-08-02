@@ -5,6 +5,7 @@
     --clr-white: #fff;
     --clr-black: #000;
     --clr-primary: #34506b;
+    --clr-Green: #00b300;
     /* Fonts */
     --ff-Faster-one: 'Faster One', cursive;
     --ff-Lateef: 'Lateef', cursive;
@@ -34,6 +35,8 @@
     --fh-lg: 2;
     --fh-xl: 2.25;
     --fh-2xl: 2.5;
+    /* Box Shadow */
+    --bs-inputs: 0px 3px 5px 0px rgba(0, 0, 0, 0.375);
 }
 
 *{
@@ -83,11 +86,14 @@
 
 /* END Page Loader */
 /* Content section */
-
+a{
+    text-decoration: none;
+    color: var(--clr-primary);
+}
 .contents{
     width: 100vw;
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,15 +106,79 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    border-bottom: 2px solid var(--clr-primary);
+    border-bottom: 1px solid var(--clr-primary);
 }
 .contents .upper-content h1{
     font-family: var(--ff-Faster-one);
     font-size: var(--fs-5xl);
     padding-bottom: var(--fs-base);
 }
-.contents .upper-content button{
+.contents .upper-content a {
     width: 100%;
     height: 50px;
+    
 }
-
+.contents .upper-content button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: var(--clr-white);
+    color: var(--clr-black);
+    font-family: var(--ff-Lateef);
+    font-size: var(--fs-xl);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: var(--bs-inputs);
+}
+.fa-google{
+    padding-left: 1rem;
+}
+.contents .lower-content{
+    width: 80vw;
+}
+.contents .lower-content form{
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contents .lower-content form input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    background: var(--clr-white);
+    color: var(--clr-black);
+    font-family: var(--ff-Lateef);
+    font-size: var(--fs-xl);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: var(--bs-inputs);
+    padding: 1rem;
+    margin: 1rem;
+    outline: none;
+}
+.contents .lower-content form input::placeholder{
+    font-family: var(--ff-Exo-2);
+    font-weight: var(--fw-300);
+    font-size: var(--fs-base);
+}
+.contents .lower-content form #submit{
+    color: var(--clr-Green);
+    font-size: var(--fs-2xl);
+    font-family: var(--ff-Lateef);
+}
+.contents .lower-content form #submit:hover{
+    background: var(--clr-Green);
+    color: var(--clr-white);
+}
+.contents .lower-content form #submit:active {
+    background: var(--clr-Green);
+    color: var(--clr-white);
+}
+.contents .lower-content form #submit:focus {
+    background: var(--clr-Green);
+    color: var(--clr-white);
+}
