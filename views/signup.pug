@@ -1,0 +1,34 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title MECH | Sign Up
+        link(rel="stylesheet", href="./css/signup.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body
+        .loader 
+            div 
+            img(src="./img/logo-white.png", alt="logo")
+        .contents
+            .upper-content
+                h1 MECH
+                h2 تسجيل حساب جديد
+                button تسجيل الدخول بأستخدام قوقل
+                    a(href="/login")
+            .lower-content
+                form(action="/register", method="post")
+                    input(type="text", name="username", placeholder="Username")
+                    input(type="password", name="password", placeholder="Password")
+                    input(type="password", name="password2", placeholder="Confirm Password")
+                    input(type="email", name="email", placeholder="Email")
+                    input(type="submit", value="Sign Up")
+                    a(href="/login") Already have an account?
+
+
+
+        script(defer).
+            $(window).on('load',function(){
+                $('.loader').fadeOut(1000);
+                $('.contents').fadeln(1000);
+                });

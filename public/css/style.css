@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&family=Faster+One&family=Lateef&display=swap');:root{
+    /* Color */
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-primary: #34506b;
+    /* Fonts */
+    --ff-Faster-one: 'Faster One', cursive;
+    --ff-Lateef: 'Lateef', cursive;
+    --ff-Exo-2: 'Exo 2', sans-serif;
+    /* Font Wghit */
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    /* Font Size */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.875rem;
+    --fs-4xl: 2.25rem;
+    --fs-5xl: 3rem;
+    --fs-6xl: 4rem;
+    /* Font Line Height */
+    --fh-xs: 1.25;
+    --fh-sm: 1.5;
+    --fh-base: 1.75;
+    --fh-lg: 2;
+    --fh-xl: 2.25;
+    --fh-2xl: 2.5;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Page Loader */
+.loader {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: url(../img/spalshImage.jpg) no-repeat center center fixed;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    z-index: 2;
+}
+
+.loader img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+.loader>div {
+    height: 200px;
+    width: 200px;
+    border: 1rem solid var(--clr-white);
+    border-top-color: var(--clr-primary);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* END Page Loader */
+
+/* CONTENT SECTION */
+.contents{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/spalshImage.jpg) no-repeat center center fixed;
+    padding-block: 3rem;
+}
+.contents img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+.contents a{
+    width: 80%;
+    height: 50px;
+    margin-top: 2rem;
+}
+.contents button{
+    width: 100%;
+    height: 50px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 50px;
+    background: var(--clr-white);
+    color: var(--clr-black);
+    font-family: var(--ff-Lateef);
+    font-size: var(--fs-3xl);
+}
+.contents button:hover {
+    background: var(--clr-primary);
+    color: var(--clr-white);
+}
+/* END OF CONTENT SECTION */

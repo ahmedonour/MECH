@@ -1,0 +1,28 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        link(rel="stylesheet", href="./css/style.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title MECH
+    body
+        .loader 
+            div 
+            img(src="./img/logo-white.png", alt="logo")
+        .contents
+            img(src="./img/logo-white.png", alt="logo")
+            a(href="/login") 
+                button تسجيل الدخول
+            a(href="/register") 
+                button تسجيل حساب جديد
+         
+
+
+
+
+        script(defer).
+            $(window).on('load',function(){
+                $('.loader').fadeOut(1000);
+                $('.contents').fadeln(1000);
+                });

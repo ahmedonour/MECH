@@ -1,0 +1,26 @@
+{
+  "name": "mech",
+  "version": "1.0.0",
+  "description": "An application for selling buying and ordering spare parts for cars",
+  "main": "index.pug",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedonour/mech.git"
+  },
+  "author": "Ahmed Onour , Mohammad Sharif",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahmedonour/mech/issues"
+  },
+  "homepage": "https://github.com/ahmedonour/mech#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+    },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
