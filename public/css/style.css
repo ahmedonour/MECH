@@ -66,8 +66,8 @@ body{
     object-fit: cover;
 }
 .loader>div {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border: 1rem solid var(--clr-white);
     border-top-color: var(--clr-primary);
     position: absolute;
@@ -89,6 +89,9 @@ body{
 /* END Page Loader */
 
 /* CONTENT SECTION */
+body {
+    background: var(--clr-white);
+}
 .contents{
     width: 100vw;
     height: 100vh;

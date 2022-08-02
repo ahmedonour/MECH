@@ -65,8 +65,8 @@
 }
 
 .loader>div {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border: 1rem solid var(--clr-white);
     border-top-color: var(--clr-primary);
     position: absolute;
@@ -91,7 +91,9 @@ a {
     text-decoration: none;
     color: var(--clr-primary);
 }
-
+body {
+    background: var(--clr-white);
+}
 .contents {
     width: 100vw;
     height: auto;
@@ -114,7 +116,7 @@ a {
 }
 
 .contents .upper-content h1 {
-    font-family: var(--ff-Faster-one);
+    font-family: var(--ff-Lateef);
     font-size: var(--fs-5xl);
     padding-bottom: var(--fs-base);
 }
