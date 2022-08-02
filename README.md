@@ -1,5 +1,5 @@
 # MECH
-## Mobile application for selling and buying Spear parts
+### Mobile application for selling and buying Spear parts
 
 # About
 
