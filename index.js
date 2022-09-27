@@ -1,6 +1,6 @@
 const express = require("express");
 const port = process.env.PORT || 5000;
-const serverApi = require("./server")
+const serverApi = require("./server/middlewares/auth")
 var app = express();
 
 
@@ -10,7 +10,6 @@ app.set('views', 'views');
 app.set('view engine', 'pug');
 // MIDDELWAER
 
-
 // HOME ROUTE
 app.get('/', function(req, res){
     res.render('index');
@@ -19,6 +18,10 @@ app.get('/', function(req, res){
 // SIGN UP ROUTE
 app.get('/register', function(req, res){
     res.render('signup');
+    
+})
+authRouter.post('/register', function(req, res){
+    res.render('login');
     
 })
 // LOGIN ROUTE
