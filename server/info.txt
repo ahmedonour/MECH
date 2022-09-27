@@ -1,0 +1,16 @@
+
+node js packget :
+bcryptjs
+express
+http
+jsonwebtoken
+mongoose
+nodemon
+
+Api:
+1_ for user signUp
+localhost:3000/api/signup
+
+2_For User SingIn
+
+localhost:3000/api/signin

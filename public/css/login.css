@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&family=Faster+One&family=Lateef&display=swap');
 
 :root {
     /* Color */
@@ -90,6 +89,7 @@
 a {
     text-decoration: none;
     color: var(--clr-primary);
+
 }
 body {
     background: var(--clr-white);
@@ -116,11 +116,15 @@ body {
 }
 
 .contents .upper-content h1 {
-    font-family: var(--ff-Lateef);
+    font-family: var(--ff-Faster-one);
     font-size: var(--fs-5xl);
     padding-bottom: var(--fs-base);
 }
-
+.contents .upper-content h2 {
+    font-family: var(--ff-Lateef);
+    font-size: var(--fs-4xl);
+    padding-bottom: var(--fs-base);
+}
 .contents .upper-content a {
     width: 100%;
     height: 50px;
@@ -157,7 +161,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.contents .lower-content form a{
+    font-size: var(--fs-2xl);
+    font-family: var(--ff-Lateef);
+}
 .contents .lower-content form input {
     width: 80%;
     height: 50px;

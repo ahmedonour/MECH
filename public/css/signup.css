@@ -113,9 +113,13 @@ body{
     border-bottom: 1px solid var(--clr-primary);
 }
 .contents .upper-content h1{
-    font-family: var(--ff-Lateef);
+    font-family: var(--ff-Faster-one);
     font-size: var(--fs-5xl);
     padding-bottom: var(--fs-base);
+}
+.contents .upper-content h2{
+    font-family: var(--ff-Lateef);
+    font-size: var(--fs-3xl);
 }
 .contents .upper-content a {
     width: 100%;
@@ -148,6 +152,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.contents .lower-content form a{
+    font-size: var(--fs-2xl);
+    font-family: var(--ff-Lateef);
 }
 .contents .lower-content form input{
     width: 80%;
