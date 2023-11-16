@@ -40,7 +40,7 @@ To use this web application, follow these steps:
 
 ## Contributors
 
-- Ahmed Suliman(https://ahmedsuliman.com): [Optional] Add your name and GitHub profile link if you contribute to this project.
+- [Ahmed Suliman](https://ahmedsuliman.com)
 
 Feel free to contribute to this project by opening issues or submitting pull requests. We appreciate your feedback and contributions!
 
